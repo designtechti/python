@@ -1,4 +1,11 @@
-# Meu primeiro código em Python
-# Comentários não são processados pelo interpretador
+# Comentário de linha única usa-se hashtag
 
+# Meu primeiro código em Python
 print ("Ola mundo")
+
+"""
+Comentário
+de 
+linhas múltiplas
+"""
+print("Outra linha")
