@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
 
-# Operações matemáticas
+# Variáveis #
 
-#Soma
-print (2 + 2)
-#Subtração
-print (2 - 2)
-#Multiplicação
-print (2 * 2)
-#Divisão
-print (2 / 2)
-#Exponenciação
-print (2 ** 2)
-#Módulos
-print (10 % 3)
+var1 = 1 # Numérico Inteiro
+
+var2 = 1.1 # Numérico Flutuante (float)
+
+var3 = "Olá mundo!" # Textual (string) 
+
+""" Boleana """
+
+var4 = True # Verdadeiro
+
+var4 = False # Falso
+
