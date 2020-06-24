@@ -1,16 +1,24 @@
 # -*- coding: utf-8 -*-
 
-# Variáveis #
+# Operadores lógicos e relacionais #
 
-var1 = 1 # Numérico Inteiro
+x = 2
+y = 3
+soma = x + y
 
-var2 = 1.1 # Numérico Flutuante (float)
+print(x == y) # igual
 
-var3 = "Olá mundo!" # Textual (string) 
+print(x != y) # diferente
 
-""" Boleana """
+print(x > y) # maior
 
-var4 = True # Verdadeiro
+print(x < y) # menor
 
-var4 = False # Falso
+print(x >= y) # maior ou igual
 
+print(x <= y) # menor ou igual
+
+
+""" Exemplo """
+
+print(soma == x )
