@@ -1,13 +1,25 @@
 # -*- coding: utf-8 -*-
 
-# Operadores relacionais #
+# Estruturas condicionais #
 
 x = 2
 y = 3
-soma = x + y
 
-print(soma == x and x == y)
+if x > y:
+	print("x é maior que y")
 
-print(soma == x or x == y)
+if x < y:
+	print("x é menor que y")
 
-print(soma == x not x == y)
+if x == y:
+	print("x é igual à y")
+
+if x != y:
+	print("x é maior à y")
+
+if x >= y:
+	print("x é maior ou igual à y")
+
+if x <= y:
+	print("x é menor ou igual à y")
+
