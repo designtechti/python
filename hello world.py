@@ -6,19 +6,8 @@ x = 2
 y = 3
 soma = x + y
 
-print(x == y) # igual
+print(soma == x and x == y)
 
-print(x != y) # diferente
+print(soma == x or x == y)
 
-print(x > y) # maior
-
-print(x < y) # menor
-
-print(x >= y) # maior ou igual
-
-print(x <= y) # menor ou igual
-
-
-""" Exemplo """
-
-print(soma == x )
+print(soma == x not x == y)
