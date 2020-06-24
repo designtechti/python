@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Estruturas condicionais #
+# Estruturas condicionais#
 
 x = 2
 y = 3
