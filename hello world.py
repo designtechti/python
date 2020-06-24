@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Operadores lógicos e relacionais #
+# Operadores relacionais #
 
 x = 2
 y = 3
