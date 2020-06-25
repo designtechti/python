@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
-# Laços de repetição (comando for) #
+# Orientação à objetos (strings parte 1) #
 
-for i in range(10,20,2):
-	print(i)
+nome = "Marcelo"
+sobrenome = "Goulart Rodrigues Junior"
+concatenacao = nome + " " + sobrenome
+tamanho = len(concatenacao)
 
-""" Para cada elemento 
-	de uma lista desde 
-	o número 10 até o 20
-	que vá de 2 em 2, 
-	retorne elemento
-"""
+print(tamanho) # conta quantos caracteres tem numa string
+print(nome[2]) # imprime qual caractere está na 2ª posição da string
+print(concatenacao[0:7]) # exibe na tela os caracteres em sequênncia desde o 1º caractere até o último
+print("Seu nome é: \n" + concatenacao)
