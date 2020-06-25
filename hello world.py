@@ -1,15 +1,10 @@
 # -*- coding: utf-8 -*-
 
-# Estruturas condicionais (comando elif)#
+# Laços de repetição (comando while) #
 
-x = 2
-y = 3
+x = 1
 
-if x > y:
-	print("x é maior que y")
+while x < 10:
+	print(x)
+	x = x + 1 # ou x += 1
 
-elif: 
-	print("x é menor que y")
-
-else: 
-	print("valores iguais")
