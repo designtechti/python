@@ -1,10 +1,16 @@
 # -*- coding: utf-8 -*-
 
-# Laços de repetição (comando while) #
+# Laços de repetição (comando for) #
 
-x = 1
+lista1 = [1,2,3,4,5]
+lista2 = ["Olá", "mundo", "!"]
+lista3 = [0, "Olá", "biscoito", "bolacha", 9.99, True, False]
 
-while x < 10:
-	print(x)
-	x = x + 1 # ou x += 1
+for i in lista1:
+	print(i)
 
+for i in lista2:
+	print(i)
+
+for i in lista3:
+	print(i)
