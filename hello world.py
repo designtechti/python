@@ -2,15 +2,12 @@
 
 # Laços de repetição (comando for) #
 
-lista1 = [1,2,3,4,5]
-lista2 = ["Olá", "mundo", "!"]
-lista3 = [0, "Olá", "biscoito", "bolacha", 9.99, True, False]
-
-for i in lista1:
+for i in range(10,20,2):
 	print(i)
 
-for i in lista2:
-	print(i)
-
-for i in lista3:
-	print(i)
+""" Para cada elemento 
+	de uma lista desde 
+	o número 10 até o 20
+	que vá de 2 em 2, 
+	retorne elemento
+"""
