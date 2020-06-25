@@ -1,16 +1,32 @@
 # -*- coding: utf-8 -*-
 
-# Orientação à objetos (strings parte 2) #
+# Funções #
 
-nome = "Marcelo \n"
-sobrenome = "Goulart Rodrigues Junior"
-concatenacao = nome + " " + sobrenome
-busca = concatenacao.find("Rodrigues")
+def soma(a,b): # Definição da função Soma
+	return a + b
+def subtracao(a,b): # Definição da função Subtração
+	return a - b
+def multiplicacao(a,b): # Definição da função Multiplicação
+	return a * b
+def divisao(a,b): # Definição da função Divisão
+	return a / b
+def exponenciacao(a,b): # Definição da função Exponenciação
+	return a ** b
+def modulo(a,b): # Definição da função Módulo
+	return a % b
 
-print(concatenacao.lower()) # Método que deixa a string com caixa baixa
-print(concatenacao.upper()) # Método que deixa a string com caixa alta
-print(concatenacao.strip()) # Método que deixa a string sem espaços e caracteres especiais
-print(concatenacao.split()) # Método que converte a string em uma lista
-print(busca) # Método que faz uma busca na string de acordo com o trecho que se deseja encontrar
-print(concatenacao[busca:]) # Método que exibe na tela o resultado da busca desde o trecho que foi encontrado até o fim
-print(concatenacao.replace("Rodrigues", "Silva")) # Método que substitui trecho de string por outro valor
+adicao = soma(2,3) # Chamada da função Soma
+subtracao = subtracao(2,3) # Chamada da função Subtração
+multiplicacao = multiplicacao(2,3) # Chamada da função Multiplicação
+divisao = divisao(2,3) # Chamada da função Divisão
+exponenciacao = exponenciacao(2,3) # Chamada da função Exponenciação
+modulo = modulo(2,3) # Chamada da função Módulo
+
+print(adicao)
+print(subtracao)
+print(multiplicacao)
+print(divisao)
+print(exponenciacao)
+print(modulo)
+
+print(soma(adicao,subtracao))
