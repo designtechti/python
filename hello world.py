@@ -1,13 +1,16 @@
 # -*- coding: utf-8 -*-
 
-# Orientação à objetos (strings parte 1) #
+# Orientação à objetos (strings parte 2) #
 
-nome = "Marcelo"
+nome = "Marcelo \n"
 sobrenome = "Goulart Rodrigues Junior"
 concatenacao = nome + " " + sobrenome
-tamanho = len(concatenacao)
+busca = concatenacao.find("Rodrigues")
 
-print(tamanho) # conta quantos caracteres tem numa string
-print(nome[2]) # imprime qual caractere está na 2ª posição da string
-print(concatenacao[0:7]) # exibe na tela os caracteres em sequênncia desde o 1º caractere até o último
-print("Seu nome é: \n" + concatenacao)
+print(concatenacao.lower()) # Método que deixa a string com caixa baixa
+print(concatenacao.upper()) # Método que deixa a string com caixa alta
+print(concatenacao.strip()) # Método que deixa a string sem espaços e caracteres especiais
+print(concatenacao.split()) # Método que converte a string em uma lista
+print(busca) # Método que faz uma busca na string de acordo com o trecho que se deseja encontrar
+print(concatenacao[busca:]) # Método que exibe na tela o resultado da busca desde o trecho que foi encontrado até o fim
+print(concatenacao.replace("Rodrigues", "Silva")) # Método que substitui trecho de string por outro valor
