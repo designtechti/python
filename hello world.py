@@ -1,32 +1,40 @@
 # -*- coding: utf-8 -*-
 
-# Funções #
+# Manipulando arquivos #
 
-def soma(a,b): # Definição da função Soma
-	return a + b
-def subtracao(a,b): # Definição da função Subtração
-	return a - b
-def multiplicacao(a,b): # Definição da função Multiplicação
-	return a * b
-def divisao(a,b): # Definição da função Divisão
-	return a / b
-def exponenciacao(a,b): # Definição da função Exponenciação
-	return a ** b
-def modulo(a,b): # Definição da função Módulo
-	return a % b
+arquivo = open("hello world.html")
 
-adicao = soma(2,3) # Chamada da função Soma
-subtracao = subtracao(2,3) # Chamada da função Subtração
-multiplicacao = multiplicacao(2,3) # Chamada da função Multiplicação
-divisao = divisao(2,3) # Chamada da função Divisão
-exponenciacao = exponenciacao(2,3) # Chamada da função Exponenciação
-modulo = modulo(2,3) # Chamada da função Módulo
+textoCompleto = arquivo.read() # Lê todo o conteúdo do arquivo
 
-print(adicao)
-print(subtracao)
-print(multiplicacao)
-print(divisao)
-print(exponenciacao)
-print(modulo)
+print(textoCompleto)
 
-print(soma(adicao,subtracao))
+linha = arquivo.readline() # Lê o conteúdo do arquivo 
+
+print(linha)
+
+linhas = arquivo.readlines() 
+
+print(linhas)
+
+arquivo.close()
+
+#####################################
+
+w = open("arquivo2.txt", "w") # Abre um novo arquivo com permissões de somente escrita
+
+w.write("Esse é o meu arquivo") # Escreve um conteúdo no arquivo criado anteriormente
+w.close()
+
+"""
+	---------------------------------------------------------------------------------------------------------------------
+	|  MODO  |		 FUNÇÃO 		|									DESCRIÇÃO										|
+	---------------------------------------------------------------------------------------------------------------------
+	|	r    |  leitura		  		|	Somente leitura.																|
+	|	w    |  escrita 			|	Caso o arquivo já exista, ele será apagado e um novo arquivo vazio será criado.	|
+	|	a    |  leitura & escrita 	|	Adiciona um novo conteúdo no fim do arquivo.									|
+	|	r+   |  leitura & escrita 	|																					|
+	|	w+	 |	escrita				|	Assim como o modo w também apaga o conteúdo do arquivo anterior.				|
+	|	a+	 |	leitura & escrita	|	Abre o arquivo para atualização.												|
+	---------------------------------------------------------------------------------------------------------------------
+	
+"""
