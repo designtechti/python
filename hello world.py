@@ -1,38 +1,32 @@
 # -*- coding: utf-8 -*-
 
-# Listas (parte 1) #
+# Listas (parte 2) #
 
-lista_string = ["abacaxi", "melancia", "abacate"]
-lista_numerica = [1,2,3,4,5]
-lista_aleatoria = ["abacate", 2, True, 9.89]
-tamanho = len(lista_aleatoria)
+lista_numerica = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-print(lista_string)
-print(lista_numerica)
-print(lista_aleatoria)
+lista_frutas = ["morango", "abacaxi", "tomate", "limão", "cereja"]
 
-print(lista_numerica[3]) # Exibe na tela o 3º item da lista, começando desde o 0.
-
-for item in lista_string: # Exibe na tela os itens da lista item por item.
-	print (item)
-
-print(tamanho) # Exibe quantos itens tem dentro da lista.
-
-lista_string.append("limão")
-print(lista_string)
-
-if 9.99 in lista_aleatoria: # Faz uma busca de um item da lista.
-	print("9.99 está na lista")
-else:
-	print("9.99 não está na lista")	
-
-del lista_numerica[1:3] # Remove itens da lista desde o 1º até o item 3.
+lista_numerica.sort() # Ordena o conteúdo da lista na ordem crescente
 print(lista_numerica)
 
-del lista_numerica[:] # Apaga todos os itens da lista
+lista_numerica.sort(reverse=True) # Ordena o conteúdo da lista na ordem decrescente
 print(lista_numerica)
 
-nova_lista = []
+lista_numerica.reverse() # Reverte o conteúdo da lista
+print(lista_numerica)
 
-nova_lista.append(57) # Acrescenta item aos poucos dentro da lista
-print(nova_lista)
+#	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-	#
+
+lista_frutas.sort() # Ordena o conteúdo da lista em ordem alfabética
+print(lista_frutas)
+
+lista_frutas.sort(reverse=True) # Ordena o conteúdo da lista na ordem decrescente
+print(lista_frutas)
+
+lista_frutas.reverse() # Reverte o conteúdo da lista
+print(lista_frutas)
+
+#	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-	#
+
+lista_numerica = sorted(lista_numerica) # Retorna uma lista ordenada
+print(lista_numerica)
