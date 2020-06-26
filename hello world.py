@@ -1,32 +1,33 @@
 # -*- coding: utf-8 -*-
 
-# Listas (parte 2) #
+# Dicionários #
 
-lista_numerica = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+"""
+	Em python, Dicionários são arrays associativos, 
+	ou seja, um determinado valor passa 
+	a ser vinculado à uma chave. 
+"""
 
-lista_frutas = ["morango", "abacaxi", "tomate", "limão", "cereja"]
+redes_sociais = {"Design_Tech_TI" : "@designtechti"} # Dicionários em Pyhon
 
-lista_numerica.sort() # Ordena o conteúdo da lista na ordem crescente
-print(lista_numerica)
+""" 
+	No dicionário acima, 
+	a chave "Design Tech TI" 
+	foi vinculado 
+	ao valor "@designtechti".
+	Para imprimí-los, basta seguir 
+	o comando abaixo: 
+"""
 
-lista_numerica.sort(reverse=True) # Ordena o conteúdo da lista na ordem decrescente
-print(lista_numerica)
+print(redes_sociais['Design_Tech_TI']) # Exibe na tela as redes sociais de Design Tech TI
 
-lista_numerica.reverse() # Reverte o conteúdo da lista
-print(lista_numerica)
+"""
+	Se o dicionário tiver vários elementos, 
+	pode-se usar laços de repetição
+	para imprimí-los: 
+"""
 
-#	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-	#
+redes_sociais = {"Design_Tech_TI" : "@designtechti", "Google" : "@google", "Udemy" : "@udemy"} # Dicionários em Pyhon
 
-lista_frutas.sort() # Ordena o conteúdo da lista em ordem alfabética
-print(lista_frutas)
-
-lista_frutas.sort(reverse=True) # Ordena o conteúdo da lista na ordem decrescente
-print(lista_frutas)
-
-lista_frutas.reverse() # Reverte o conteúdo da lista
-print(lista_frutas)
-
-#	-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-	#
-
-lista_numerica = sorted(lista_numerica) # Retorna uma lista ordenada
-print(lista_numerica)
+for chave in redes_sociais: # Imprime todos os itens do dicionário redes_sociais
+	print(redes_sociais[chave])
