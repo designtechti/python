@@ -31,3 +31,14 @@ redes_sociais = {"Design_Tech_TI" : "@designtechti", "Google" : "@google", "Udem
 
 for chave in redes_sociais: # Imprime todos os itens do dicionário redes_sociais
 	print(redes_sociais[chave])
+	print(chave) # Imprime as chaves do dicionário
+
+for chave in redes_sociais.items(): # Imprime os itens do dicionário junto com as chaves
+	print(chave)
+
+for chave in redes_sociais.values(): # Imprime os valores/itens do dicionário
+	print(chave)
+
+for chave in redes_sociais.keys(): # Imprime os chaves do dicionário
+	print(chave)
+
