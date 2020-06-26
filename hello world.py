@@ -1,40 +1,38 @@
 # -*- coding: utf-8 -*-
 
-# Manipulando arquivos #
+# Listas (parte 1) #
 
-arquivo = open("hello world.html")
+lista_string = ["abacaxi", "melancia", "abacate"]
+lista_numerica = [1,2,3,4,5]
+lista_aleatoria = ["abacate", 2, True, 9.89]
+tamanho = len(lista_aleatoria)
 
-textoCompleto = arquivo.read() # Lê todo o conteúdo do arquivo
+print(lista_string)
+print(lista_numerica)
+print(lista_aleatoria)
 
-print(textoCompleto)
+print(lista_numerica[3]) # Exibe na tela o 3º item da lista, começando desde o 0.
 
-linha = arquivo.readline() # Lê o conteúdo do arquivo 
+for item in lista_string: # Exibe na tela os itens da lista item por item.
+	print (item)
 
-print(linha)
+print(tamanho) # Exibe quantos itens tem dentro da lista.
 
-linhas = arquivo.readlines() 
+lista_string.append("limão")
+print(lista_string)
 
-print(linhas)
+if 9.99 in lista_aleatoria: # Faz uma busca de um item da lista.
+	print("9.99 está na lista")
+else:
+	print("9.99 não está na lista")	
 
-arquivo.close()
+del lista_numerica[1:3] # Remove itens da lista desde o 1º até o item 3.
+print(lista_numerica)
 
-#####################################
+del lista_numerica[:] # Apaga todos os itens da lista
+print(lista_numerica)
 
-w = open("arquivo2.txt", "w") # Abre um novo arquivo com permissões de somente escrita
+nova_lista = []
 
-w.write("Esse é o meu arquivo") # Escreve um conteúdo no arquivo criado anteriormente
-w.close()
-
-"""
-	---------------------------------------------------------------------------------------------------------------------
-	|  MODO  |		 FUNÇÃO 		|									DESCRIÇÃO										|
-	---------------------------------------------------------------------------------------------------------------------
-	|	r    |  leitura		  		|	Somente leitura.																|
-	|	w    |  escrita 			|	Caso o arquivo já exista, ele será apagado e um novo arquivo vazio será criado.	|
-	|	a    |  leitura & escrita 	|	Adiciona um novo conteúdo no fim do arquivo.									|
-	|	r+   |  leitura & escrita 	|																					|
-	|	w+	 |	escrita				|	Assim como o modo w também apaga o conteúdo do arquivo anterior.				|
-	|	a+	 |	leitura & escrita	|	Abre o arquivo para atualização.												|
-	---------------------------------------------------------------------------------------------------------------------
-	
-"""
+nova_lista.append(57) # Acrescenta item aos poucos dentro da lista
+print(nova_lista)
