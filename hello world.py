@@ -1,44 +1,14 @@
 # -*- coding: utf-8 -*-
 
-# Dicionários #
+# Números aleatórios #
 
-"""
-	Em python, Dicionários são arrays associativos, 
-	ou seja, um determinado valor passa 
-	a ser vinculado à uma chave. 
-"""
+import random
 
-redes_sociais = {"Design_Tech_TI" : "@designtechti"} # Dicionários em Pyhon
+lista = [6, 45, 9]
 
-""" 
-	No dicionário acima, 
-	a chave "Design Tech TI" 
-	foi vinculado 
-	ao valor "@designtechti".
-	Para imprimí-los, basta seguir 
-	o comando abaixo: 
-"""
+numero = random.choice(lista) # Imprime um número aleatório de uma lista
+print(numero)
 
-print(redes_sociais['Design_Tech_TI']) # Exibe na tela as redes sociais de Design Tech TI
-
-"""
-	Se o dicionário tiver vários elementos, 
-	pode-se usar laços de repetição
-	para imprimí-los: 
-"""
-
-redes_sociais = {"Design_Tech_TI" : "@designtechti", "Google" : "@google", "Udemy" : "@udemy"} # Dicionários em Pyhon
-
-for chave in redes_sociais: # Imprime todos os itens do dicionário redes_sociais
-	print(redes_sociais[chave])
-	print(chave) # Imprime as chaves do dicionário
-
-for chave in redes_sociais.items(): # Imprime os itens do dicionário junto com as chaves
-	print(chave)
-
-for chave in redes_sociais.values(): # Imprime os valores/itens do dicionário
-	print(chave)
-
-for chave in redes_sociais.keys(): # Imprime os chaves do dicionário
-	print(chave)
+numero = random.randint(0, 10) # Imprime um número aleatório de zero até 10
+print(numero)
 
