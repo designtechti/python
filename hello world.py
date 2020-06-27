@@ -1,14 +1,17 @@
 # -*- coding: utf-8 -*-
 
-# Números aleatórios #
+# Tratamento de exceções #
 
-import random
+a = 2
+b = 0
 
-lista = [6, 45, 9]
+try:
+	print(a/b)
+except:
+	print("Não é possível divisão por 0") 
 
-numero = random.choice(lista) # Imprime um número aleatório de uma lista
-print(numero)
-
-numero = random.randint(0, 10) # Imprime um número aleatório de zero até 10
-print(numero)
-
+""" Tenta fazer uma operação matemática 
+	e caso não der, emite uma mensagem 
+	de erro para poder continuar
+	a execução do programa.
+"""
