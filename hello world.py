@@ -1,28 +1,29 @@
 # -*- coding: utf-8 -*-
 
-# Python 2 vs Python 3 #
+# PYTHON AVANÇADO: Função list comprehension #
 
-""" 
-	1) COMANDO print()
-		Em Python 3 passa ser obrigatório o uso de parênteses. Veja:
-		- print()
+x = [1, 2, 3, 4, 5]
+y = []
 
-	2) COMANDO input()
-		Em Python 2 há duas variações:
-		
-		# strings
-		- raw_input() 
+# Eleva a lista x ao quadrado (x²) da forma mais simples
 
-		# valores numéricos
-		- input()
+for i in x:
+	y.append(i**2)
+print(y)
 
-		Já em Python 3, deve-se usar apenas input() para strings, e para 
-		números  deve-se combinar com as funções int e float. Veja: 
-		
-		# Recebendo textos
-		- meu_texto = input("Digite um texto: ")
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= #
 
-		# Recebendo números
-		- numero_inteiro = int(input("Digite um número inteiro: "))
-		- numero_decimal = float(input("Digite um número decimal: "))
-"""
+# Eleva a lista x ao quadrado (x²) com o list comprehension s/ condição
+
+x = [1, 2, 3, 4, 5] # lista
+y = [i**2 for i in x ] # [valor_a_adicionar laço]
+
+# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- #
+
+# Adiciona apenas os nº ímpares da lista x
+
+x = [1, 2, 3, 4, 5] # lista
+y = [i**2 for i in x ] # [valor_a_adicionar condição]
+z = [i for i in x if i%2==1]
+
+print(z)
