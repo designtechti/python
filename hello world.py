@@ -1,19 +1,16 @@
 # -*- coding: utf-8 -*-
 
-# PYTHON AVANÇADO: Função reduce #
+# PYTHON AVANÇADO: Função zip #
 
-# Importa a função reduce
+"""
+	Esta função concatena os valores 
+	de cada lista e exibe na tela 
+	tudo junto.
+"""
 
-from functools import reduce
+lista_numerica = [1, 2, 3, 4, 5]
+lista_string = ["abacaxi", "banana", "carambola", "dedo-de-moça", "estrela-do-mar"]
+lista_valor = ["R$ 1,00", "R$ 2,00", "R$ 3,00", "R$ 4,00", "R$ 5,00"]
 
-
-# Define a função que soma todos os valores da lista
-
-def soma(x, y):
-	return x + y
-
-lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-soma = reduce(soma, lista)
-
-
-print(soma)
+for numero, nome, valor in zip(lista_numerica, lista_string, lista_valor):
+	print(numero, nome, valor)
