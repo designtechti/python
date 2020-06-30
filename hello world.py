@@ -1,17 +1,19 @@
 # -*- coding: utf-8 -*-
 
-# PYTHON AVANÇADO: Função enumerate #
+# PYTHON AVANÇADO: Função map #
 
-lista = ["abacate", "bola", "cachorro"]
+def dobro(x):
+	return x*2
 
-# Exibe o número do índice de uma lista da forma mais simples
+valor = [1, 2, 3, 4, 5]
+valor_dobrado = map(dobro, valor)
 
-for i in range(len(lista)):
-	print(i, lista[i])
+# Exibe o dobro dos números da lista
 
-# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= #
+for v in valor_dobrado:
+	print(v)
 
-# Exibe o número do índice de uma lista com a função enumerate
+# Outra maneira
 
-for i, nome in enumerate(lista):
-	print(i, nome)
+valor_dobrado = list(valor_dobrado)
+print(valor_dobrado)
