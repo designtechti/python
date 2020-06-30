@@ -1,29 +1,17 @@
 # -*- coding: utf-8 -*-
 
-# PYTHON AVANÇADO: Função list comprehension #
+# PYTHON AVANÇADO: Função enumerate #
 
-x = [1, 2, 3, 4, 5]
-y = []
+lista = ["abacate", "bola", "cachorro"]
 
-# Eleva a lista x ao quadrado (x²) da forma mais simples
+# Exibe o número do índice de uma lista da forma mais simples
 
-for i in x:
-	y.append(i**2)
-print(y)
+for i in range(len(lista)):
+	print(i, lista[i])
 
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= #
 
-# Eleva a lista x ao quadrado (x²) com o list comprehension s/ condição
+# Exibe o número do índice de uma lista com a função enumerate
 
-x = [1, 2, 3, 4, 5] # lista
-y = [i**2 for i in x ] # [valor_a_adicionar laço]
-
-# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- #
-
-# Adiciona apenas os nº ímpares da lista x
-
-x = [1, 2, 3, 4, 5] # lista
-y = [i**2 for i in x ] # [valor_a_adicionar condição]
-z = [i for i in x if i%2==1]
-
-print(z)
+for i, nome in enumerate(lista):
+	print(i, nome)
