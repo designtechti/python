@@ -1,19 +1,19 @@
 # -*- coding: utf-8 -*-
 
-# PYTHON AVANÇADO: Função map #
+# PYTHON AVANÇADO: Função reduce #
 
-def dobro(x):
-	return x*2
+# Importa a função reduce
 
-valor = [1, 2, 3, 4, 5]
-valor_dobrado = map(dobro, valor)
+from functools import reduce
 
-# Exibe o dobro dos números da lista
 
-for v in valor_dobrado:
-	print(v)
+# Define a função que soma todos os valores da lista
 
-# Outra maneira
+def soma(x, y):
+	return x + y
 
-valor_dobrado = list(valor_dobrado)
-print(valor_dobrado)
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+soma = reduce(soma, lista)
+
+
+print(soma)
